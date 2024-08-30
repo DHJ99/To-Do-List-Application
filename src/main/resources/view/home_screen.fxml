@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="406.0" prefWidth="639.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeScreenController">
+   <children>
+      <Label alignment="TOP_LEFT" layoutX="-3.0" prefHeight="413.0" prefWidth="305.0" style="-fx-background-color: #8ce6a9;" />
+      <JFXTextField fx:id="txtTask" layoutX="29.0" layoutY="315.0" prefHeight="32.0" prefWidth="210.0" promptText="Task Title">
+         <font>
+            <Font name="Arial Bold Italic" size="12.0" />
+         </font>
+      </JFXTextField>
+      <Button fx:id="btnAdd" layoutX="95.0" layoutY="360.0" mnemonicParsing="false" onAction="#btnAdd" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: BLACK;" text="ADD" textAlignment="CENTER" textFill="#e4dada">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="29.0" layoutY="71.0" prefHeight="25.0" prefWidth="61.0" text="TODO : ">
+         <font>
+            <Font name="Cambria Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="7.0" prefHeight="25.0" prefWidth="223.0" text="Steps to Success" textFill="#320101">
+         <font>
+            <Font name="Pristina" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTask1" layoutX="29.0" layoutY="113.0" prefHeight="25.0" prefWidth="197.0" />
+      <Label fx:id="lblTask2" layoutX="29.0" layoutY="144.0" prefHeight="25.0" prefWidth="197.0" />
+      <Label fx:id="lblTask4" layoutX="29.0" layoutY="206.0" prefHeight="25.0" prefWidth="197.0" />
+      <Label fx:id="lblTask3" layoutX="29.0" layoutY="175.0" prefHeight="25.0" prefWidth="197.0" />
+      <Label fx:id="lblTask5" layoutX="29.0" layoutY="237.0" prefHeight="25.0" prefWidth="197.0" />
+      <CheckBox fx:id="chkBx1" layoutX="240.0" layoutY="117.0" mnemonicParsing="false" onAction="#chkBx1" />
+      <CheckBox fx:id="chkBx2" layoutX="240.0" layoutY="148.0" mnemonicParsing="false" onAction="#chkBx2" />
+      <CheckBox fx:id="chkBx3" layoutX="240.0" layoutY="179.0" mnemonicParsing="false" onAction="#chkBx3" />
+      <CheckBox fx:id="chkBx4" layoutX="240.0" layoutY="210.0" mnemonicParsing="false" onAction="#chkBx4" />
+      <CheckBox fx:id="chkBx5" layoutX="240.0" layoutY="241.0" mnemonicParsing="false" onAction="#chkBx5" />
+      <CheckBox fx:id="chkBx6" layoutX="240.0" layoutY="272.0" mnemonicParsing="false" onAction="#chkBx6" />
+      <Label fx:id="lblTask6" layoutX="29.0" layoutY="268.0" prefHeight="25.0" prefWidth="197.0" />
+      <DatePicker fx:id="dateAdd" layoutX="88.0" layoutY="71.0" />
+      <Label layoutX="301.0" prefHeight="412.0" prefWidth="338.0" style="-fx-background-color: #f3f6c2;" />
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="320.0" layoutX="318.0" layoutY="82.0" stroke="BLACK" strokeType="INSIDE" width="305.0" />
+      <Label layoutX="338.0" layoutY="20.0" prefHeight="53.0" prefWidth="240.0" text="Mission Accomplished" textFill="#a41212">
+         <font>
+            <Font name="Pristina" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblF1" layoutX="335.0" layoutY="99.0" prefHeight="25.0" prefWidth="264.0" style="-fx-border-radius: 10; -fx-background-color: #ebf09d;" />
+      <Label fx:id="lblF2" layoutX="335.0" layoutY="144.0" prefHeight="25.0" prefWidth="264.0" style="-fx-background-color: #ebf09d;" />
+      <Label fx:id="lblF3" layoutX="335.0" layoutY="188.0" prefHeight="25.0" prefWidth="264.0" style="-fx-background-color: #ebf09d;" />
+      <Label fx:id="lblF4" layoutX="335.0" layoutY="232.0" prefHeight="25.0" prefWidth="264.0" style="-fx-background-color: #ebf09d;" />
+      <Label fx:id="lblF5" layoutX="335.0" layoutY="277.0" prefHeight="25.0" prefWidth="264.0" style="-fx-background-color: #ebf09d;" />
+      <Label fx:id="lblF6" layoutX="335.0" layoutY="319.0" prefHeight="25.0" prefWidth="264.0" style="-fx-background-color: #ebf09d;" />
+      <Button fx:id="btnView" layoutX="498.0" layoutY="360.0" mnemonicParsing="false" onAction="#btnView" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: BLACK;" text="VIEW" textAlignment="CENTER" textFill="#e4dada">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnClear" layoutX="354.0" layoutY="360.0" mnemonicParsing="false" onAction="#btnClear" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: BLACK;" text="CLEAR" textAlignment="CENTER" textFill="#e4dada">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMore" layoutX="255.0" layoutY="321.0" mnemonicParsing="false" onAction="#btnMore" prefHeight="17.0" prefWidth="29.0" style="-fx-background-color: black;" text="+" textFill="#e8e2e2">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="389.0" prefWidth="274.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TaskAddFormController">
+   <children>
+      <Label prefHeight="389.0" prefWidth="274.0" style="-fx-background-color: #d8f6a3;" />
+      <Label fx:id="lblTaskName" layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: black;" textFill="#f8f8f8" />
+      <TextArea fx:id="txtArea" layoutX="17.0" layoutY="58.0" prefHeight="280.0" prefWidth="238.0" />
+      <Button fx:id="btnDone" layoutX="102.0" layoutY="350.0" mnemonicParsing="false" onAction="#btnDone" prefHeight="25.0" prefWidth="62.0" text="Done">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

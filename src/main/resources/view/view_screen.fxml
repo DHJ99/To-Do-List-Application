@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewScreenController">
+   <children>
+      <Label layoutY="-7.0" prefHeight="413.0" prefWidth="600.0" style="-fx-background-color: #d7e0bf;" />
+      <TableView fx:id="tblTasks" layoutX="32.0" layoutY="133.0" prefHeight="190.0" prefWidth="545.0">
+        <columns>
+          <TableColumn fx:id="colDate" prefWidth="97.0" text="Date" />
+            <TableColumn fx:id="colTitle" prefWidth="137.0" text="Task Title" />
+          <TableColumn fx:id="colDescription" prefWidth="310.0" text="Description" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutY="-3.0" prefHeight="72.0" prefWidth="600.0" style="-fx-background-color: black;" text="Mission Accomplished" textAlignment="JUSTIFY" textFill="#dddddd">
+         <font>
+            <Font name="Pristina" size="42.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnReload" layoutX="261.0" layoutY="341.0" mnemonicParsing="false" onAction="#btnReload" prefHeight="31.0" prefWidth="79.0" text="Reload">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <JFXTextField fx:id="txtSearchDate" layoutX="50.0" layoutY="89.0" prefHeight="25.0" prefWidth="349.0" />
+      <Button fx:id="btnSearch" layoutX="428.0" layoutY="86.0" mnemonicParsing="false" onAction="#btnSearch" prefHeight="31.0" prefWidth="79.0" text="Search">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
