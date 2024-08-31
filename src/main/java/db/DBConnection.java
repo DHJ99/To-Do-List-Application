@@ -9,7 +9,7 @@ import java.util.List;
 public class DBConnection {
     private static final String URL = "jdbc:mysql://localhost:3306/mytodolist";
     private static final String USER = "root";
-    private static final String PASSWORD = "your_password_here";
+    private static final String PASSWORD = "12345";
 
     private static DBConnection instance;
 
@@ -33,7 +33,7 @@ public class DBConnection {
     }
 
     public void addTask(Task newTask) {
-        String sql = "INSERT INTO tasks (title, description, date completed) VALUES (task_title ,  task_description  , completion_date  )";
+        String sql = "INSERT INTO tasks (task_title ,  task_description  , completion_date  ) VALUES (title, description, date completed)";
         try (Connection conn = getConnection();
              PreparedStatement pstmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
             pstmt.setString(1, newTask.getTitle());
