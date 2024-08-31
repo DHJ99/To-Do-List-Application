@@ -7,6 +7,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
+import lombok.Setter;
 import model.Task;
 
 import java.time.LocalDate;
@@ -23,14 +24,11 @@ public class TaskAddFormController {
     @FXML
     private TextArea txtArea;
 
+    @Setter
     private ArrayList<Task> tempTasks;
 
     public void setTaskName(String text) {
         lblTaskName.setText(text);
-    }
-
-    public void setTempTasks(ArrayList<Task> tempTasks) {
-        this.tempTasks = tempTasks;
     }
 
     @FXML
@@ -45,15 +43,15 @@ public class TaskAddFormController {
             Stage stage = (Stage) btnDone.getScene().getWindow();
             stage.close();
         } else {
-            showAlert("Error", "Please enter both task name and description.");
+            showAlert();
         }
     }
 
-    private void showAlert(String title, String content) {
+    private void showAlert() {
         Alert alert = new Alert(Alert.AlertType.ERROR);
-        alert.setTitle(title);
+        alert.setTitle("Error");
         alert.setHeaderText(null);
-        alert.setContentText(content);
+        alert.setContentText("Please enter both task name and description.");
         alert.showAndWait();
     }
 }

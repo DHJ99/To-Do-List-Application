@@ -33,7 +33,7 @@ public class DBConnection {
     }
 
     public void addTask(Task newTask) {
-        String sql = "INSERT INTO tasks (title, description, date, completed) VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO tasks (title, description, date completed) VALUES (task_title ,  task_description  , completion_date  )";
         try (Connection conn = getConnection();
              PreparedStatement pstmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
             pstmt.setString(1, newTask.getTitle());

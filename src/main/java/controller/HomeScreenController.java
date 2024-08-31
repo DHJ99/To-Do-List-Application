@@ -60,7 +60,7 @@ public class HomeScreenController implements Initializable {
                 nextAvailableTaskLabel++;
             }
         } else {
-            showAlert("Error", "No more space to display tasks.");
+            showAlert("Error 1", "No more space to display tasks.");
         }
     }
 
@@ -70,12 +70,12 @@ public class HomeScreenController implements Initializable {
         LocalDate selectedDate = dateAdd.getValue();
 
         if (taskTitle.isEmpty() || selectedDate == null) {
-            showAlert("Error", "Please add Task Title and Date!");
+            showAlert("Error 2", "Please add Task Title and Date!");
             return;
         }
 
         if (tempTasks.isEmpty()) {
-            showAlert("Error", "Please add a description using the 'More' button before adding the task.");
+            showAlert("Error 3", "Please add a description using the 'More' button before adding the task.");
             return;
         }
 
@@ -122,7 +122,7 @@ public class HomeScreenController implements Initializable {
 
             TaskAddFormController taskAddFormController = loader.getController();
             taskAddFormController.setTaskName(txtTask.getText());
-            taskAddFormController.setTempTasks(tempTasks);
+            taskAddFormController.setTempTasks((ArrayList<Task>) tempTasks);
 
             stage.showAndWait();
         } catch (IOException e) {
